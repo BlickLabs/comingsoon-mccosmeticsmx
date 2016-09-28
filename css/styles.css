@@ -1,7 +1,7 @@
 /* Preloader */
 
 .title {
-  font-size: 75px;
+  font-size: 4.3em;
   display: block;
   width: 50%;
   margin: 0 auto;
@@ -21,6 +21,39 @@
   display: block;
   width: 50%;
   margin: 40px auto 0 auto;
+}
+
+.row.text-center > div {
+	display: inline-block !important;
+	float: none !important;
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .title {
+    font-size: 4em;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .subtitle {
+    font-size: 2em;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin: 40px auto 0 auto;
+  }
+
+  .sub-subtitle {
+
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin: 40px auto 0 auto;
+  }
+
+
 }
 
 #preloader {
@@ -52,7 +85,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     color: #8a8b8b;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     background-color: rgba(53, 10, 4, .5);
 	background-image:url(../img/bg.jpg);
