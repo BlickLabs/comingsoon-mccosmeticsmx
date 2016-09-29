@@ -57,11 +57,13 @@
 			</h1>
 			<div class="row text-center" style="margin-top: 40px;">
 				<div class="col-lg-4 col-md-5 col-sm-7 col-xs-10">
-					<form name="subscribe-form">
-						<input type="text" name="email" placeholder="Email">
-						<button type="button" name="btn-submit"class="contact-btn-submit">
+					<form id="newsletter-form">
+						<input type="text" name="email" id="newsletter-email" placeholder="Email">
+						<button type="button" name="btn-submit" id="newsletter-button"
+						        class="contact-btn-submit">
 							Enviar
 						</button>
+						<span id="newsletter-label"></span>
 					</form>
 				</div>
 			</div>
@@ -81,6 +83,7 @@
 
 	<!-- Javascript framework and plugins start here -->
 	<script type="text/javascript" src="js/jquery.js"></script>
+	<!-- <script src="js/newsletter.js"></script> -->
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/modernizr.js"></script>
