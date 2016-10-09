@@ -18,7 +18,11 @@ $(function() {
         if (data.status === 'subscribed') {
           $('#newsletter-label').text('Suscripción realizada con éxito');
         } else {
-          $('#newsletter-label').text('Ocurrió un error.');
+          if (data.title === 'Member Exists') {
+            $('#newsletter-label').text('Actualmente ya te encuentras registrado');
+          } else {
+            $('#newsletter-label').text('Ocurrió un error.');
+          }
         }
       },
       error: function (data) {
